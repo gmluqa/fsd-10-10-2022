@@ -2,6 +2,16 @@ let caja1 = document.getElementById("1")
 let caja2 = document.getElementById("2")
 let caja3 = document.getElementById("3")
 
+let casillas = document.getElementsByClassName("rectangulo")
+
+Array.from(casillas).map((casilla, index) => {
+    casilla.addEventListener("click", () => {
+
+    })
+});
+
+console.log(casillas)
+
 let interruptor = false;
 
 interruptor = !interruptor
@@ -16,25 +26,27 @@ caja1.addEventListener("click", () => {
 
 //functinons + methods in lowercase
 
-const marcarCasilla = id => {
+// const marcarCasilla = id => {
 
-    switch (id) {
-        case '1':
-            if (!interruptor) {
-                caja1.innerHTML = 'x'
-            } else {
-                caja1.innerHTML = 'o'
-            }
-            break;
+//     switch (id) {
+//         case '1':
+//             if (!interruptor) {
+//                 caja1.innerHTML = 'x'
+//             } else {
+//                 caja1.innerHTML = 'o'
+//             }
+//             break;
 
-        case '2':
-            caja2.innerHTML = "o"
-            break;
-        case '3':
-            caja3.innerHTML = "x"
-            break;
-    }
+//         case '2':
+//             caja2.innerHTML = "o"
+//             break;
+//         case '3':
+//             caja3.innerHTML = "x"
+//             break;
+//     }
+// }
+
+const marcarCasilla = (posicion) => {
+
 }
-
-
 
