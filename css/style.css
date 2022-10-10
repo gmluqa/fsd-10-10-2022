@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.rectangulo {
+  height: 1em;
+  padding: 2em;
+  margin-right: 1em;
+
+  background-color: navy;
+  color: white;
+
+  border-radius: 25%;
+}
+
+.rectangulo:hover {
+  transition: 0.2s;
+  background-color: darkcyan;
+}
